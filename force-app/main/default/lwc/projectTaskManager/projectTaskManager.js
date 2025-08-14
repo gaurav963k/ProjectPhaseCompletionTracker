@@ -29,7 +29,7 @@ export default class ProjectTaskManager extends LightningElement {
         { label: 'Status', fieldName: 'status', type: 'text'},
         { label: 'Due Date', fieldName: 'dueDate', type: 'date'},
         { label: 'Contributed Value', fieldName: 'contributedValue', type: 'number', editable: true, cellAttributes: { alignment: 'left' } },
-        { label: 'Internal?', fieldName: 'isInternal', type: 'boolean' }
+        { label: 'Internal?', fieldName: 'isInternal', type: 'boolean'}
     ];
 
     get disableMarkCompleted() {

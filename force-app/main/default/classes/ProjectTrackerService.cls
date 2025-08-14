@@ -1,5 +1,5 @@
 public without sharing class ProjectTrackerService {
-
+	// Wrapper object to store the progress bar and project completion details
     public class ProgressDTO {
         @AuraEnabled public Decimal numerator;
         @AuraEnabled public Decimal denominator;
@@ -7,7 +7,7 @@ public without sharing class ProjectTrackerService {
         @AuraEnabled public Boolean stamped;
         @AuraEnabled public Datetime stampDate;
     }
-
+	// Calling from task trigger to get all the opportunity related to Opportunity Line Item
     public static Set<Id> parentOppsFromOliIds(Set<Id> oliIds){
         if (oliIds == null || oliIds.isEmpty()) return new Set<Id>();
         Set<Id> oppIds = new Set<Id>();

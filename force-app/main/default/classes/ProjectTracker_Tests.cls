@@ -76,8 +76,9 @@ private class ProjectTracker_Tests {
 
     @isTest
     static void testUpdateTasks() {
-        Task existingTask = [SELECT Id, Status FROM Task LIMIT 1];
+        Task existingTask = [SELECT Id, Status,Contributed_Value__c FROM Task LIMIT 1];
         existingTask.Status = 'Completed';
+        existingTask.Contributed_Value__c = 20;
 
         Test.startTest();
         List<ProjectTaskController.TaskRowDTO> updatedRows =
