@@ -30,6 +30,12 @@ The business needs:
 ## Getting Started
 1.	Take a look at the [component](https://github.com/gaurav963k/ProjectPhaseCompletionTracker/wiki/Component-Overview) overview.
 2.	[Data Model](https://github.com/gaurav963k/ProjectPhaseCompletionTracker/wiki/Data-Model) Impelemted
+3.	Screenshot of project 
+<img width="966" height="416" alt="Screenshot 2025-08-15 at 9 23 27 PM" src="https://github.com/user-attachments/assets/50582340-4b6d-4ea6-9e7f-fb8699206f61" />
+<img width="960" height="348" alt="image" src="https://github.com/user-attachments/assets/6f5f9c5b-36e8-42fa-a195-da9dbff09bb8" />
+
+
+
 
 ---
 
