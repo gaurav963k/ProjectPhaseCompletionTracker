@@ -1,4 +1,4 @@
-trigger OpportunityLineItemTrigger on OpportunityLineItem (after insert, after update, after delete) {
+trigger OpportunityLineItemTrigger on OpportunityLineItem (after insert, after update) {
     Set<Id> oppIds = new Set<Id>();
     Set<Id> oliIds = new Set<Id>();
     String taskAction;
