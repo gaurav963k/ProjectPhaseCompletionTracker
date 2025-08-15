@@ -1,14 +1,39 @@
 # Project Phase Completion Tracker &amp; Task Manager
 
-Now that you’ve created a Salesforce DX project, what’s next? Here are some documentation resources to get you started.
+## 📌 Overview
+This Salesforce solution automates project phase completion tracking and provides an intuitive interface for managing tasks linked to project phases.
 
-## How Do You Plan to Deploy Your Changes?
+- **Projects** → Represented by **Opportunity** records.
+- **Phases** → Represented by **Opportunity Line Items (OLIs)**.
+- **Milestones / Sub-tasks** → Represented by **Task** records linked to OLIs.
 
-Do you want to deploy a set of changes, or create a self-contained application? Choose a [development model](https://developer.salesforce.com/tools/vscode/en/user-guide/development-models).
+The system automatically stamps the **Project 80% Complete Date** on the Opportunity when completed task values reach **80% of total project value** and enforces a **one-time update rule**.  
+Additionally, a custom **Lightning Web Component (LWC)** enables users to view and update related tasks directly from the Opportunity page.
 
-## Configure Your Salesforce DX Project
+---
 
-The `sfdx-project.json` file contains useful configuration information for your project. See [Salesforce DX Project Configuration](https://developer.salesforce.com/docs/atlas.en-us.sfdx_dev.meta/sfdx_dev/sfdx_dev_ws_config.htm) in the _Salesforce DX Developer Guide_ for details about this file.
+## 🎯 Problem Statement
+The business needs:
+1. **Automated 80% Completion Tracking**
+   - When cumulative completed task values across all OLIs reach 80% of the total OLI values for an Opportunity.
+   - Stamp the date/time and mark as complete — **only once**.
+   - Ignore internal tasks from completion calculations.
+   - Log completion progress in history.
+
+2. **User-Friendly Task Management**
+   - Display all related tasks for an Opportunity in a single interface.
+   - Enable inline status updates.
+   - Provide a clean, intuitive UI.
+
+---
+
+## 📝 Business Rules
+- Only **Opportunities** with `Project_Type__c = 'New Project'` are eligible.
+- Tasks with `Is_Internal_Task__c = true` are excluded from percentage calculations.
+- Once the **80% Complete Date** is set, it **must never be overwritten**.
+- Maintain a detailed history of percentage calculations and completion events.
+
+---
 
 ## Read All About It
 
