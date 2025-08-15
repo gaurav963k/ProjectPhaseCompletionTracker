@@ -29,7 +29,7 @@ The business needs:
 
 ## Getting Started
 1.	Take a look at the [component](https://github.com/gaurav963k/ProjectPhaseCompletionTracker/wiki/Component-Overview) overview.
-2.	[Data Model](https://github.com/manpreet-sfdc/Covid19VaccineNotification/wiki/Data-Model) Impelemted
+2.	[Data Model](https://github.com/gaurav963k/ProjectPhaseCompletionTracker/wiki/Data-Model) Impelemted
 3.	[Install core](https://github.com/manpreet-sfdc/Covid19VaccineNotification/wiki/Install-core).
 4.	[Setup](https://github.com/manpreet-sfdc/Covid19VaccineNotification/wiki/Setup)
 
