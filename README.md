@@ -27,11 +27,11 @@ The business needs:
 
 ---
 
-## 📝 Business Rules
-- Only **Opportunities** with `Project_Type__c = 'New Project'` are eligible.
-- Tasks with `Is_Internal_Task__c = true` are excluded from percentage calculations.
-- Once the **80% Complete Date** is set, it **must never be overwritten**.
-- Maintain a detailed history of percentage calculations and completion events.
+## Getting Started
+1.	Take a look at the [component](https://github.com/manpreet-sfdc/Covid19VaccineNotification/wiki/Component-Overview) overview.
+2.	[Data Model](https://github.com/manpreet-sfdc/Covid19VaccineNotification/wiki/Data-Model) Impelemted
+3.	[Install core](https://github.com/manpreet-sfdc/Covid19VaccineNotification/wiki/Install-core).
+4.	[Setup](https://github.com/manpreet-sfdc/Covid19VaccineNotification/wiki/Setup)
 
 ---
 
